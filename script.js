@@ -12,7 +12,7 @@ botaoMostrar.addEventListener('click', function() {
 function logar(){
     var senha = document.getElementById('password').value;
 
-    if(senha == "admin"){
+    if(senha == "senha"){
         alert('Sucesso');
         document.querySelector('.pop_senha').style.display = 'none';
         document.querySelector('#exclusivo-btn').style.display = 'none';
