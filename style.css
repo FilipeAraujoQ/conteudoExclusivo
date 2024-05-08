@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkslategray;
+    color: #fff;
+    position: relative;
+}
+
+h1{
+    margin: 2em auto;
+    text-align: center;
+}
+
+.container{
+    position: relative;
+}
+
+#container_exclusivo{
+    height: 30em;
+    width: 80%;
+    margin: 0 auto;
+    background: #927f7f;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    filter: blur(10px);
+}
+
+img{
+    height: 50px;
+}
+
+p{
+    width: auto;
+}
+
+#exclusivo-btn{
+    position: absolute;
+    z-index: 3;
+    top: 47%;
+    left: 47%;
+    background-color: black;
+    color: gold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.pop_senha{
+    background-color: #fff;
+    width: 28vh;
+    height: 8vh;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    top: 52%;
+    left: 43%;
+    display: none;
+}
+
+.pop_senha.show{
+    display: block;
+}
+
+h3{
+    color: #000;
+    margin: 2% 3%;
+}
+
+input{
+    margin: 2% 3%;
+}
