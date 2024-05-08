@@ -13,7 +13,7 @@ function logar(){
     var senha = document.getElementById('password').value;
 
     if(senha == "senha"){
-        alert('Sucesso');
+        //alert('Sucesso');
         document.querySelector('.pop_senha').style.display = 'none';
         document.querySelector('#exclusivo-btn').style.display = 'none';
         document.querySelector('#container_exclusivo').style.filter = 'none';
@@ -22,6 +22,26 @@ function logar(){
     }
 
 }
+
+//visualizar senha
+const eye = document.querySelector('.bi')
+
+eye.addEventListener('click', () => {
+    const inputSenha = document.getElementById('password')
+
+    if(eye.classList.contains('bi-eye-fill')) {
+        eye.classList.remove('bi-eye-fill')
+        eye.classList.add('bi-eye-slash-fill')
+
+        inputSenha.type = 'text'
+        return
+    }
+
+    eye.classList.remove('bi-eye-slash-fill')
+    eye.classList.add('bi-eye-fill')
+    inputSenha.type = 'password'
+})
+
 //pega a o enter
 function verificarEnter(event) {
     if (event.key === 'Enter') {

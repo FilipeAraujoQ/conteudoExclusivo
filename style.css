@@ -51,14 +51,18 @@ p{
 
 .pop_senha{
     background-color: #fff;
-    width: 28vh;
-    height: 8vh;
+    width: 14em;
+    height: 4em;
     align-items: center;
     position: absolute;
     z-index: 5;
     top: 52%;
     left: 43%;
     display: none;
+}
+
+.bi{
+    color: #000;
 }
 
 .pop_senha.show{
